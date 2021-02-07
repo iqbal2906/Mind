@@ -1,7 +1,7 @@
 const PostMessage = require("../models/postMessage");
 
 class Post {
-  static async getPost(req, res) {
+  static async getPosts(req, res) {
     try {
       const postMessages = await PostMessage.find();
       res.status(200).json(postMessages);
