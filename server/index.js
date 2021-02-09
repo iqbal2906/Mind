@@ -14,7 +14,7 @@ app.use("/posts", postRoutes);
 
 const CONNECTION_URL =
   "mongodb+srv://iqbalsahrizal:globalenglish@mymindcluster.zx6dm.mongodb.net/<dbname>?retryWrites=true&w=majority";
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 mongoose
   .connect(CONNECTION_URL, {
