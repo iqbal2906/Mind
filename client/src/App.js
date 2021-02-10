@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
+import {
+  Container,
+  AppBar,
+  Typography,
+  Grow,
+  Grid,
+  Toolbar,
+} from "@material-ui/core";
 import { useDispatch } from "react-redux";
 
 import { getPosts } from "./actions/posts";
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
-import mind from "./images/mind.png";
+import galleryQ from "./images/galleryQ.png";
 import useStyles from "./styles";
 
 const App = () => {
@@ -19,16 +26,13 @@ const App = () => {
 
   return (
     <Container maxWidth="lg">
-      <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography className={classes.heading} variant="h2" align="center">
-          Mind
-        </Typography>
+      <AppBar className={classes.appBar} position="static" elevation={0}>
         <img
           className={classes.image}
-          src={mind}
-          alt="mind"
-          height="60"
-          width="60"
+          src={galleryQ}
+          alt="galleryQ"
+          height="150"
+          width="150"
         />
       </AppBar>
       <Grow in>
