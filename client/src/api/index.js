@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3000/posts";
+const url = "https://gallery-q.herokuapp.com/posts";
 
 export const fecthPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
